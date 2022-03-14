@@ -88,8 +88,8 @@ function run(){
                 fclose($myfile);
 
                 ## actual chat sending stuff.
-                echo "sent chat...<br>";
-                echo "[".date('h:i:s', time())."] ".$username." : ".$message;
+                echo "Successfully sent.";
+                //echo "[".date('h:i:s', time())."] ".$username." : ".$message;
                 $file = 'chat_fetch/chat_main.txt';
                 $current = file_get_contents($file);
                 $current .= "[".date('h:i:s', time())."] ".$username." : ".$message."\n";
@@ -107,8 +107,8 @@ function run(){
                 fclose($myfile);
 
                 ## actual chat sending stuff.
-                echo "sent chat...<br>";
-                echo "[".date('h:i:s', time())."] ".$username." : ".$message;
+                echo "Successfully sent.";
+                //echo "[".date('h:i:s', time())."] ".$username." : ".$message;
                 $file = 'chat_fetch/chat_main.txt';
                 $current = file_get_contents($file);
                 $current .= "[".date('h:i:s', time())."] ".$username." : ".$message."\n";
